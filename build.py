@@ -287,7 +287,7 @@ class Gen_compressed(threading.Thread):
   def do_compile(self, params, target_filename, filenames, remove):
     # Send the request to Google.
     headers = {"Content-type": "application/x-www-form-urlencoded"}
-    conn = httplib.HTTPSConnection("localhost", 1080)
+    conn = httplib.HTTPSConnection("localhost", 8087)
     conn.set_tunnel("closure-compiler.appspot.com", 443)
     conn.request("POST", "/compile", urllib.urlencode(params), headers)
     response = conn.getresponse()
