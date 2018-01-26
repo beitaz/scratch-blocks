@@ -34,3 +34,7 @@ common.pyc
 /gh-pages/Gemfile.lock
 /gh-pages/closure-library
 /gh-pages/_site
+
+# Ignore git log file
+all-commits.log
+all-temp-commits.log
